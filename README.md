@@ -1,5 +1,7 @@
 # create-nextjs-dapp
 
+![image 9](https://github.com/user-attachments/assets/9bc99dab-54ab-4553-ba19-807d555e2cbf)
+
 A modern Web3 project generator for creating Next.js applications with built-in blockchain integration, featuring RainbowKit, Wagmi, and shadcn/ui components.
 
 ## 🚀 Quick Start

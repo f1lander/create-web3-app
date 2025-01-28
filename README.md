@@ -386,7 +386,7 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 
 ## 📄 License
 
-MIT © [Your Name]
+MIT © Edax Uclés
 
 ## 🙋‍♂️ Support
 

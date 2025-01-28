@@ -1,4 +1,4 @@
-# create-nextjs-dapp
+# create-web3-app
 
 ![image 9](https://github.com/user-attachments/assets/9bc99dab-54ab-4553-ba19-807d555e2cbf)
 

@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --muted-foreground-reverse: 24 5.4% 63.9%;
+
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --muted-foreground-reverse: 25 5.3% 44.7%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.7% 82.9%;
+  }
+
+  .skewmorphism {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:
+      -20px 20px 60px #d9d9d9,
+      20px -20px 60px #ffffff;
+  }
+
+  .skewmorphism-dark {
+    border-radius: 50px;
+    background: #0f172a;
+    box-shadow:
+      -20px 20px 60px #0d1424,
+      20px -20px 60px #111a30;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.drop {
+  margin: 175px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -30px;
+  margin: 0 auto;
+  background: #fff;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-animation-name: drip;
+  -webkit-animation-name: drip;
+  animation-name: drip;
+  -moz-animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  -webkit-animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.drop:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid rgba(255, 255, 255, 1);
+  top: -22px;
+}
+
+.wave {
+  margin: 175px auto;
+  position: relative;
+  opacity: 0;
+  top: 0;
+  width: 2px;
+  height: 1px;
+  border: #fff 7px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.wave:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 1px;
+  border: #fff 5px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple-2;
+  -webkit-animation-name: ripple-2;
+  animation-name: ripple-2;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    width: 600px;
+    height: 300px;
+    border-width: 1px;
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+    top: 100px;
+    left: 200px;
+  }
+}
+
+@keyframes drip {
+  to {
+    top: 190px;
+  }
+}
